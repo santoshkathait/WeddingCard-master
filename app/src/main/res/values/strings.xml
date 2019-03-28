@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeddingCard</string>
+    <string name="name">Name</string>
+    <string name="we_delight">We would be delighted with your attendance at the wedding  of </string>
+    <string name="s_o">s/o</string>
+    <string name="d_o">d/o</string>
+    <string name="regards">Regards  &amp; Compliments from the</string>
+    <string name="wedding_card">Wedding Card</string>
+    <string name="dd_mm_yyyy">MM-DD-YYY</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

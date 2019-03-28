@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "893717064094",
+    "firebase_url": "https://weddingcard-c8a3c.firebaseio.com",
+    "project_id": "weddingcard-c8a3c",
+    "storage_bucket": "weddingcard-c8a3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893717064094:android:e23f8ee4967fe92f",
+        "android_client_info": {
+          "package_name": "ssk.com.weddingcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893717064094-c4vb89uv1mqmfetb88oc68m024r5m1ug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzd4sMNAzQ4HVF0Q9gjo6bl9sVIadQhXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

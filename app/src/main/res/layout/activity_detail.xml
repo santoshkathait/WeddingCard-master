@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/ll_top"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Groom's Name"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_groom_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/theme_color"
+                android:background="@drawable/edittext_box"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="Enter name"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bride's Name"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_bride_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/theme_color"
+                android:background="@drawable/edittext_box"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="Enter name"/>
+
+
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Invitee's Name"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/text_color"
+            android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_invitee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/theme_color"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:background="@drawable/edittext_box"
+                android:hint="Enter name"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Groom Parent's Name"
+                android:fontFamily="cursive"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_groom_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/theme_color"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:background="@drawable/edittext_box"
+                android:hint="Enter name"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Bride Parent's Name"
+                android:fontFamily="cursive"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_bride_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edittext_box"
+                android:hint="Enter name"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:textColor="@color/theme_color" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Venue"
+                android:fontFamily="cursive"
+
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/edittext_box"
+                android:hint="Enter venue"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:maxLength="40"
+                android:textColor="@color/theme_color" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Date"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:editable="false"
+                android:focusable="false"
+                android:longClickable="false"
+                android:textColor="@color/theme_color"
+                android:background="@drawable/edittext_box"
+                android:drawableRight="@drawable/calender_res"
+                android:hint="@string/dd_mm_yyyy"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Contact No"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_contact_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/theme_color"
+                android:background="@drawable/edittext_box"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:inputType="number"
+                android:hint="Enter contact"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Family Name"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_family_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/theme_color"
+                android:background="@drawable/edittext_box"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="Enter thanks note family name"/>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/theme_color"
+                android:background="@drawable/edittext_box"/>
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

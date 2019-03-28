@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theme_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter" />
+
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:textColor="@color/theme_color"
+        android:background="@drawable/edittext_box"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+<RelativeLayout
+    android:id="@+id/rl_bitmap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/background_border">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/door32"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+        <TextView
+                android:id="@+id/tv_invitee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_we_would_delight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/we_delight"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_groom_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/text_highlight"
+                        android:padding="2dp"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_groom_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/s_o"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_with"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="with"
+                        android:textSize="20sp"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_bride_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:padding="2dp"
+                        android:textSize="@dimen/text_highlight"
+                        android:fontFamily="cursive"
+                        android:textColor="@color/text_color"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_bride_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/d_o"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Saturday April 14th, 2018"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_venue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_regards"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/regards"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_family_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="cursive"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>
